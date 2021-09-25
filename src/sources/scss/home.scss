@@ -1,0 +1,71 @@
+#wrapper {
+    background-image: url("../images/systems/background-home.jpg");
+    background-size: contain;
+
+    .box-container {
+        height: 100vh;
+
+        .container {
+            width: 800px;
+
+            main {
+                padding: 50px 0px;
+            }
+
+            .main-text {
+                color: #fff;
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .box-thumbnail .thumbnail {
+                animation: animation 2s infinite;
+            }
+
+            @keyframes animation {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .box-main {
+                background-color: #fff;
+                padding: 10px;
+                width: 65%;
+
+                .title {
+                    font-size: 25px;
+                    padding-bottom: 20px;
+                }
+
+                .box {
+                    border: 1px solid #7f8c8d;
+                    padding: 25px;
+                    border-radius: 5px;
+
+                    .price-title {
+                        font-size: 18px;
+                    }
+
+                    .price-converted-title {
+                        font-size: 60px;
+                        display: block;
+                    }
+
+                    #btn-convert {
+                        font-size: 30px;
+                        color: #000;
+                    }
+
+                    .notification {
+                        min-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
